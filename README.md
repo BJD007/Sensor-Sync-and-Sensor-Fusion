@@ -1,3 +1,3 @@
 # Sensor-Sync-and-Sensor-Fusion
 
-Main repository for all robot projects
+Main repository for all Sensor-Sync-and-Sensor-Fusion projects
