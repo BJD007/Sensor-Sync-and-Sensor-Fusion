@@ -18,11 +18,11 @@
 - Build your ROS package: catkin_make
 - Run the node: rosrun your_package_name radar_fusion.py
 
-Note that this is a simplified example and you'll need to adapt it to your specific radar hardware, message formats, and fusion requirements. 
-
-The pointcloud2_to_array and array_to_pointcloud2 methods are placeholders and should be implemented based on your actual PointCloud2 message structure.
-
-Additionally, you may want to enhance the fusion algorithm based on your specific needs, potentially incorporating more advanced techniques like particle filters or machine learning approaches for more robust radar data fusion
+## To adapt this code to your specific radar hardware:
+- Adjust the topic names in the subscriber initialization to match your radar topics.
+- Modify the pointcloud2_to_array function if your PointCloud2 messages have a different structure or additional fields.
+- Tune the DBSCAN parameters (eps and min_samples) based on your radar's resolution and noise characteristics.
+- Adjust the UKF parameters (process noise, measurement noise, initial state uncertainty) based on your radar's specifications and expected dynamics of the tracked objects.
 
 
 Created on 2022-11-05
